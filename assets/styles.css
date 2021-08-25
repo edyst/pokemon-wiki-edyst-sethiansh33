@@ -1,0 +1,1189 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Avenir-Next, Roboto, sans-serif;
+    margin: 0px;
+  }
+  
+  .navigationbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+  
+    justify-content: space-between;
+  }
+
+  .navigationbar__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navigationbar__brand img {
+    width: 50%;
+  }
+  
+  .navigationbar__links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .navigationbar__link {
+    margin: auto 2rem;
+  }
+  .navigationbar__link a {
+    color: #424242;
+    text-decoration: none;
+  }
+  
+  .navigationbar__link .btn {
+    background-color: orange;
+    color: white;
+    font-size: 1rem;
+    padding: 0.2rem 0.8rem;
+    border-color: orange;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .navigationbar__brand {
+      justify-content: left;
+      margin-left: 0.5rem;
+    }
+  
+    .navigationbar__link {
+      margin: auto 0.6rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navigationbar {
+      justify-content: space-between;
+    }
+    .navigationbar__brand {
+      justify-content: left;
+      margin-left: 0.3rem;
+      width: 10%;
+    }
+    .navigationbar__brand img {
+      width: 100%;
+    }
+    .navigationbar__links {
+      justify-content: space-between;
+      padding-left: 0;
+      width: 80%;
+    }
+    .navigationbar__link {
+      margin: auto 0px;
+      font: small;
+    }
+
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .navigationbar {
+      display: block;
+    }
+    .navigationbar__brand {
+      padding: auto 3px;
+      margin: 0;
+    }
+    .navigationbar__brand img {
+      width: 90%;
+      height: 8vh;
+    }
+    .navigationbar__links {
+      justify-content: space-evenly;
+      padding-left: 0;
+      margin: 0;
+      margin-bottom: 2px;
+    }
+
+  }
+  
+
+
+
+
+
+  /* main section */
+  
+  .main {
+    background-image: url(https://i.imgur.com/ksqOx5F.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+  }
+  .main h1 {
+    font-size: 90px;
+    margin: 0;
+  }
+  
+  .main h3 {
+    font-size: 33px;
+    margin: 0;
+  }
+  .main h1,
+  .main h3 {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b3;
+  }
+  
+  .main__content {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+  }
+  
+  .button {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0.7rem auto;
+  }
+  
+  .button--blue {
+    background-color: #4992ca;
+    color: white;
+    border: none;
+  }
+  
+  .button--transparent {
+    background-color: #0000;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  .button--link {
+    border-radius: 15px;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .main__content {
+      top: 15%;
+      left: 10%;
+    }
+  
+    .main h1 {
+      font-size: 75px;
+      margin: 0;
+    }
+  
+    .main h3 {
+      font-size: 25px;
+      margin: 0;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main__content {
+      top: 15%;
+      left: 10%;
+    }
+    .main h1 {
+      font-size: 60px;
+      margin-bottom: 4px;
+    }
+  
+    .main h3 {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .main__content {
+      text-align: center;
+      left: 50%;
+      margin-left: -196.5px;
+      top: 50%;
+      margin-top: -196.5px;
+    }
+    .main h1 {
+      font-size: 40px;
+      margin-bottom: 4px;
+    }
+  
+    .main h3 {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+    }
+  }
+  
+
+
+
+
+
+  /* monstr section */
+  
+  .monstr {
+    background-color: #4992ca;
+    margin-top: 0;
+    height: 44rem;
+  }
+  
+  .monstr__content {
+    padding: 5rem 10rem;
+  }
+  
+  .monstr h2,
+  .monstr p,
+  .monstr h4 {
+    text-align: center;
+    color: white;
+  }
+  
+  .monstr h2 {
+    margin-top: 0;
+    font-size: 45px;
+  }
+  .monstr h4 {
+    font-size: 30px;
+  }
+  
+  .monstr__cards {
+    display: flex;
+    justify-content: space-evenly;
+  
+    margin-top: 3rem;
+  }
+  
+  .monstr__card {
+    position: relative;
+    margin: 2rem 3rem;
+  }
+  
+  .monstr__card .fas {
+    display: inline-block;
+    width: 100%;
+  
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: auto;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .monstr__content {
+      padding: 2rem 6rem;
+    }
+    .monstr__card {
+      margin: 1rem 1.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .monstr__content {
+      padding: 0;
+      padding-top: 1rem;
+    }
+    .monstr__card {
+      margin: 1rem 1.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .monstr {
+      height: 82rem;
+    }
+    .monstr__content {
+      padding: 0;
+      padding-top: 1rem;
+    }
+  
+    .monstr__cards {
+      flex-wrap: wrap;
+    }
+    .monstr__card {
+      margin: 0;
+      padding: 1rem 1rem;
+    }
+  }
+  
+
+
+
+
+  /*stat section*/
+  
+  .stat {
+    margin-top: 0;
+    height: 55rem;
+  }
+  .stat__content {
+    padding: 5rem 10rem;
+    text-align: center;
+  }
+  .stat__content h2 {
+    font-size: 45px;
+  }
+  
+  .stat__cards {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat__card {
+    margin: 1rem 5rem;
+  }
+  .stat__card h4 {
+    font-size: 30px;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .stat__content {
+      padding: 5rem 7rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .stat {
+      height: 43rem;
+    }
+    .stat__content {
+      padding: 0;
+    }
+    .stat__cards {
+      justify-content: space-evenly;
+    }
+    .stat__card {
+      margin: 0;
+  
+      width: 40%;
+    }
+    .stat__card img {
+      width: 16rem;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .stat {
+      height: 90rem;
+    }
+    .stat__content {
+      padding: 0;
+    }
+    .stat__cards {
+      flex-wrap: wrap;
+    }
+  }
+  
+
+
+
+
+  /*pokewards section */
+  
+  .pokewards {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+  .pokewards h4 {
+    font-size: 30px;
+  }
+  .pokewards h6 {
+    font-size: 18px;
+  }
+  .pokewards__card {
+    display: flex;
+  }
+  .pokewards__imgdiv {
+    padding: 2rem 1rem;
+    border-radius: 50%;
+  }
+  .pokewards__imgdiv img {
+    width: 10rem;
+    height: 10rem;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+  .logo__card {
+    padding: 2rem 1rem;
+  }
+  
+  .logo__card img {
+    width: 7rem;
+    height: 2rem;
+  }
+  .pokewards__p {
+    padding-top: 6rem;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .pokewards {
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .pokewards {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+    .pokewards__p {
+      padding-top: 3rem;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .pokewards {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .pokewards__card {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+    }
+    .pokewards h6 {
+      font-size: 18px;
+      margin: 0;
+    }
+  
+    .pokewards__imgdiv {
+      padding: 5px 0;
+    }
+    .pokewards__imgdiv img {
+      width: 6rem;
+      height: 6rem;
+    }
+    .logo__card {
+      padding: 0rem 0rem;
+    }
+  
+    .logo__card img {
+      width: 6rem;
+      height: 5rem;
+    }
+    .pokewards__p {
+      padding-top: 0rem;
+    }
+  }
+  
+
+
+
+
+  /* QandA section */
+  .QnA {
+    padding: 1rem 4rem;
+    background-color: #4992ca;
+    height: 30rem;
+    color: white;
+  }
+  
+  .qna__ordered li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .QnA h2 {
+    text-align: center;
+    font-size: 42px;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .QnA {
+      padding: 2rem 2rem;
+      height: 36rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .QnA {
+      padding: 1rem 1rem;
+      height: 37rem;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .QnA {
+      padding: 0rem 1rem;
+      padding-top: 0.5rem;
+      height: 40rem;
+    }
+  }
+  
+
+
+
+  /* Tables section */
+  
+  .table-sec {
+    padding: 1rem 10rem;
+    height: 60rem;
+  }
+  .table-sec h3 {
+    font-size: 42px;
+  }
+  .table-sec h3,
+  .table-sec h4 {
+    text-align: center;
+  }
+  .div-content {
+    display: flex;
+  }
+  .div-content .columnone {
+    width: 33%;
+  }
+  .div-content .columntwo {
+    width: 77%;
+  }
+  
+  .div-content h4 {
+    text-align: left;
+  }
+  table {
+    width: 100%;
+  
+    text-align: center;
+    justify-content: center;
+    
+
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #dddddd;
+  }
+  th {
+    color: #000;
+    font-size: 3.5vh;
+    font-size: 500;
+  }
+  td {
+    color: #8a8a8a;
+    font-weight: 300;
+    font-size: 3vh;
+  }
+  
+  .books {
+    text-align: center;
+  }
+  .books p {
+    color: #4992ca;
+    font-size: 1rem;
+  }
+  
+  .button--blue2 {
+    padding: 0.5rem 2rem;
+    color: white;
+    font-family: inherit;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .table-sec {
+      padding: 1rem 4rem;
+      height: 60rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .table-sec {
+      padding: 1rem 1rem;
+      height: 72rem;
+    }
+    table {
+      width: 87%;
+      margin: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .table-sec {
+      padding: 1rem 0;
+      height: 105rem;
+    }
+    .table-div {
+      width: 100%;
+    }
+    table {
+      width: 25%;
+      margin: auto;
+    }
+    .div-content {
+      flex-direction: column;
+    }
+    .div-content .columnone {
+      width: 100%;
+    }
+    .div-content .columntwo {
+      width: 100%;
+    }
+  
+    #parathree p {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+
+
+
+
+  /*know section */
+  .know {
+    background-color: #424242;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .know__content {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  .know__content h2 {
+    font-size: 45px;
+    color: white;
+  }
+  .know__content .button--transparent {
+    margin: auto;
+    padding: 0.5rem 3rem;
+    border-width: 2.5px;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .know__content {
+      margin: auto 2rem;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .know__content {
+      margin: auto 2rem;
+      text-align: center;
+    }
+  }
+  
+
+
+
+  /*poke card section */
+  
+  .pokemoncard {
+    text-align: center;
+    height: 30rem;
+  }
+  .pokemoncard h3 {
+    font-size: 42px;
+    color: grey;
+  }
+  .poke__card {
+    width: 18%;
+    height: 70%;
+    border: 1px solid black;
+    border-top: 1rem solid #4992ca;
+    margin: auto;
+  }
+  .poke__grey {
+    background-color: rgba(248, 254, 255, 0.034);
+  }
+  .poke__p {
+    border-top: 1px solid black;
+  }
+  
+  .pokewards--color {
+    color: white;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .poke__card {
+      width: 50%;
+      height: 70%;
+      margin: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .poke__card {
+      width: 70%;
+      height: 70%;
+      margin: auto;
+    }
+  }
+  
+
+
+
+  /*gen-card */
+  
+  .gen-card {
+    padding: 1rem 14rem;
+  }
+  .gen-card > h1 {
+    text-align: center;
+    font-size: 42px;
+    color: grey;
+  }
+  
+  .gen-card__container {
+    display: flex;
+  }
+  .gen-card__card {
+    width: 48%;
+  
+    border: 1px solid black;
+    border-top: 1rem solid #4992ca;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .gen-card__header {
+    padding-left: 0.7rem;
+  }
+  
+  .gen-card__card p {
+    padding-left: 0.7rem;
+  }
+  
+  .gen-card__body {
+    border-top: 1px solid black;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .gen-card {
+      padding: 0;
+      margin: 0;
+    }
+    .gen-card__container {
+      width: 100%;
+    }
+    .gen-card__card {
+      margin: 0 auto;
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .gen-card {
+      padding: 0;
+      margin: 0;
+    }
+    .gen-card__container {
+      width: 100%;
+    }
+    .gen-card__card {
+      margin: 0 auto;
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .gen-card {
+      padding: 0;
+      margin: 0;
+    }
+    .gen-card__container {
+      flex-direction: column;
+      width: 100%;
+    }
+    .gen-card__card {
+      margin: auto;
+      width: 70%;
+    }
+  }
+  
+
+
+  /*email section */
+  
+  .email {
+    background-color: #424242;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .email h2 {
+    color: white;
+    font-size: 42px;
+  }
+  .email__input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 10rem;
+    margin: 0.7rem auto;
+  }
+  .email .button--transparent {
+    padding: 1rem 3rem;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .email {
+      margin: auto 0;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .email {
+      margin: auto 0;
+      text-align: center;
+      height: 30rem;
+    }
+  }
+  
+
+  /*poke games section */
+  
+  .pokegame {
+    padding: 1rem 10rem;
+    height: 46rem;
+    text-align: center;
+  }
+  
+  .pokegame h2 {
+    font-size: 42px;
+    color: gray;
+  }
+  
+  .pokegame__cards {
+    display: flex;
+  }
+  
+  .pokegame__card {
+    text-align: center;
+    margin: auto 1rem;
+    padding: 2rem 3rem;
+    width: 33%;
+  }
+  
+  .pokegame__card img {
+    height: 200px;
+    width: 10rem;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .pokegame {
+      padding: 1rem 5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .pokegame {
+      padding: 1rem 0;
+    }
+  
+    .pokegame__card {
+      padding: 1rem 0;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .pokegame {
+      padding: 1rem 0;
+      height: 90rem;
+    }
+    .pokegame__cards {
+      flex-direction: column;
+    }
+  
+    .pokegame__card {
+      padding: 1rem 0;
+      width: 100%;
+    }
+  }
+  
+
+
+  /* desginers section */
+  .designers {
+    margin: 2rem auto;
+    padding: 1rem 10rem;
+    height: 46rem;
+    text-align: center;
+    background-color: #4992ca;
+    color: white;
+  }
+  
+  .designers h2 {
+    font-size: 42px;
+  }
+  
+  .designers__cards {
+    display: flex;
+  }
+  
+  .designers__card {
+    padding: 3rem 3rem;
+  
+    width: 33%;
+  }
+  
+  .designers__card img {
+    height: 30%;
+    border-radius: 50%;
+  }
+  
+  .designers__card .p {
+    text-align: left;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .designers {
+      padding: 1rem 6rem;
+      height: 53rem;
+    }
+    .designers__card img {
+      height: 24%;
+      border-radius: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .designers {
+      padding: 1rem 2rem;
+      height: 50rem;
+    }
+    .designers__card {
+      padding: 2rem 1rem;
+  
+      width: 33%;
+    }
+  
+    .designers__card img {
+      height: 20%;
+      border-radius: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .designers {
+      padding: 1rem 0;
+      height: 120rem;
+    }
+    .designers__cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    .designers__card {
+      width: 50%;
+      padding: 2rem 1rem;
+    }
+  
+    .designers__card img {
+      height: 200px;
+      width: 100%;
+      border-radius: 50%;
+    }
+  
+    .designers__card .p {
+      text-align: center;
+    }
+  }
+  
+
+
+  /*logo section */
+  
+  .logo {
+    margin: 2rem auto;
+    padding: 1rem 10rem;
+    height: 35rem;
+    text-align: center;
+  }
+  
+  .logo h2 {
+    font-size: 42px;
+    color: gray;
+  }
+  
+  .logo h4 {
+    color: gray;
+  }
+  
+  .logo__images {
+    display: flex;
+  }
+  
+  .logo__image img {
+    width: 60%;
+    height: auto;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+    .logo {
+      margin: 2rem auto;
+      padding: 1rem 6rem;
+      height: 35rem;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+      margin: 2rem auto;
+      padding: 1rem 3rem;
+      height: 30rem;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .logo {
+      padding: 0;
+      height: 64rem;
+    }
+  
+    .logo__images {
+      flex-direction: column;
+    }
+    .logo__image img {
+      width: 30%;
+      height: auto;
+    }
+  }
+ 
+  
+
+  /*know more*/
+  
+  .know-more {
+    background-color: #4992ca;
+    color: white;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .know-more__content {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  .know-more__content h2 {
+    font-size: 45px;
+    color: white;
+  }
+  .know-more__content .button--transparent {
+    margin: auto;
+    padding: 0.5rem 3rem;
+    border-width: 2.5px;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .know-more__content {
+      margin: auto 0;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .know-more__content {
+      margin: auto 0;
+      text-align: center;
+    }
+  }
+  
+
+
+  
+  /* footer */
+  
+  .footer {
+    background-color: #424242;
+    color: white;
+    height: 15rem;
+  
+    text-align: center;
+  }
+  
+  .footer__columns {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .footer__column {
+    width: 25%;
+  }
+  
+  .footer__column h3 {
+    color: rgba(233, 231, 231, 0.445);
+  }
+  
+  .footer__column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0.6rem auto;
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1290px) {
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+      padding: 0;
+      height: 14rem;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .footer {
+      padding: 0;
+      height: 25rem;
+    }
+    .footer__column {
+      width: 50%;
+    }
+    .footer__columns {
+      flex-wrap: wrap;
+    }
+  }
